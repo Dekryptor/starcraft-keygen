@@ -1,5 +1,4 @@
 var x = 3;
-var c = 0;
 var key = '';
 while( key.length < 14 ) {
 	var ran = Math.floor(Math.random()*10);
@@ -11,8 +10,6 @@ while( key.length < 14 ) {
 	key += ran;
 }
 
-x = x % 10;
-
-key += x;
+key += x % 10;
 
 console.log(key)
